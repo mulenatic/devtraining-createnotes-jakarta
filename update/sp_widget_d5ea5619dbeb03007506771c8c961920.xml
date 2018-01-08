@@ -27,8 +27,8 @@
 			noteBody: c.data.note,
 			noteTitle: c.data.title
 		}).then(function(r){
-			console.log('Updated Note ' + c.data.sys_id + ' in Notes Body');
-			$rootScope.$emit('updatedNote', c.data.sys_id);
+			console.log('Updated Note ' + r.data + ' in Notes Body');
+			$rootScope.$emit('updatedNote', r.data);
 		});		
 	}
 	
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-01-08 10:22:45</sys_created_on>
         <sys_id>d5ea5619dbeb03007506771c8c961920</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Notes Body</sys_name>
         <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
         <sys_policy/>
         <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
         <sys_update_name>sp_widget_d5ea5619dbeb03007506771c8c961920</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-01-08 11:57:47</sys_updated_on>
+        <sys_updated_on>2018-01-08 12:02:43</sys_updated_on>
         <template><![CDATA[<div class="panel panel-default" ng-show="c.data.noteID">
   <div class="panel-heading clearfix">
     <div class="row">
